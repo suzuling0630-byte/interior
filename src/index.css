@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+
+  --color-archive-bg: #fcf9f5;
+  --color-archive-charcoal: #1c1c1a;
+  --color-archive-secondary: #665d50;
+  --color-archive-beige: #ede1d0;
+  --color-archive-surface-lowest: #ffffff;
+  --color-archive-surface-low: #f6f3ef;
+  --color-archive-surface: #f0ede9;
+  --color-archive-surface-high: #eae8e4;
+  --color-archive-surface-highest: #e5e2de;
+  --color-archive-inverse: #31302e;
+  --color-archive-inverse-on: #f3f0ec;
+  --color-archive-outline: #747878;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-archive-bg);
+    color: var(--color-archive-charcoal);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar and smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--color-archive-beige);
+  color: var(--color-archive-secondary);
+}
+
+/* Hide scrollbar for clean aesthetic but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

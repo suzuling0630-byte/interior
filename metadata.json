@@ -1,0 +1,6 @@
+{
+  "name": "Archive Interiors",
+  "description": "A high-end editorial digital experience for Archive Interiors, a premium London-based design studio specializing in minimalist architecture and spatial harmony.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
